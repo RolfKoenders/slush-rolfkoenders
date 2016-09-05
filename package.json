@@ -1,0 +1,25 @@
+{
+  "name": "slush-rolfkoenders",
+  "version": "0.1.0",
+  "description": "Slush generator to scaffold my node projects",
+  "main": "slushfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slushgenerator"
+  ],
+  "author": "Rolf Koenders <@rolfkoenders>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.6.2",
+	"gulp-conflict": "^0.1.1",
+    "gulp-install": "^0.1.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-template": "^0.1.1",
+    "inquirer": "^0.8.0",
+    "moment": "^2.14.1",
+    "slush": "^1.1.1",
+    "underscore.string": "^3.3.4"
+  }
+}
