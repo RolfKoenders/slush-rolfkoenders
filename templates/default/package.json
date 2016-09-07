@@ -10,10 +10,7 @@
 		"start": "node ./index.js",
 		"test": "gulp test"
 	},
-	"author": {
-		"name": "<%= authorName %>",
-		"email": "<%= authorEmail %>"
-	},
+	"author": "<%= authorName %> <<%= authorHandle %>>",
 	"license": "MIT",
 	"dependencies": {
 		"convict": "^1.4.0"

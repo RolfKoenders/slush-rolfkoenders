@@ -6,7 +6,8 @@ let conf = convict({
 	port: {
 		doc: 'Port to listen on',
 		format: 'port',
-		default: 9090
+		default: 9090,
+		env: 'PORT'
 	}
 });
 

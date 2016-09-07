@@ -1,12 +1,13 @@
 'use strict';
 
 const gulp = require('gulp');
-let install = require('gulp-install');
-let conflict = require('gulp-conflict');
-let template = require('gulp-template');
-let rename = require('gulp-rename');
-let moment = require('moment');
-let inquirer = require('inquirer');
+const install = require('gulp-install');
+const conflict = require('gulp-conflict');
+const template = require('gulp-template');
+const rename = require('gulp-rename');
+const git = require('gulp-git');
+const moment = require('moment');
+const inquirer = require('inquirer');
 const path = require('path');
 const _ = require('underscore.string');
 
@@ -46,12 +47,17 @@ gulp.task('default', (done) => {
 		}
 	];
 
-	inquirer.prompt(prompts, function (answers) {
+	inquirer.prompt(prompts, (answers) => {
 		if(!answers.moveon) {
 			return done();
 		}
+
+		// Init the folder as a git repo
+		git.init();
+
 		answers.year = moment().format('YYYY');
 		answers.appNameSlug = _.slugify(answers.appName);
+
 		gulp.src([
 			__dirname + '/templates/default/**',
 			__dirname + '/templates/default/.*'
