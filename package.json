@@ -1,6 +1,6 @@
 {
 	"name": "slush-rolfkoenders",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Slush generator to scaffold my node projects",
 	"main": "slushfile.js",
 	"keywords": [
