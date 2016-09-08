@@ -3,6 +3,8 @@
 
 > My personal template for node apps
 
+[![npm version](https://badge.fury.io/js/slush-rolfkoenders.svg)](https://badge.fury.io/js/slush-rolfkoenders)
+
 ## What? 🤓
 By running this slush generator you bootstrap your next javascript/node project with all the files you need to get started. It provides you with a simple directory setup and lets you immediately focus on the code instead of creating the project structure.
 
